@@ -4,20 +4,20 @@ A docker-container for Oracle Instant Client 12, based on CentOs. Perfect for us
 
 ## Step 1
 
-Unfortunately, Oracle does not allow us to include their software in images, so you need to download Oracle Instant Client linux binaries before we build the image. 
+Unfortunately, Oracle does not allow us to include their software in docker-images, so you need to download Oracle Instant Client linux binaries (and accept their license) before we build the image. 
 
 Get the following files 
 
-oracle-instantclient12.1-basic-12.1.0.2.0-1.rpm
-oracle-instantclient12.1-devel-12.1.0.2.0-1.rpm
-oracle-instantclient12.1-sqlplus-12.1.0.2.0-1.rpm
+* oracle-instantclient12.1-basic-12.1.0.2.0-1.rpm
+* oracle-instantclient12.1-devel-12.1.0.2.0-1.rpm
+* oracle-instantclient12.1-sqlplus-12.1.0.2.0-1.rpm
 
 from [here](http://www.oracle.com/technetwork/topics/linuxx86-64soft-092277.html)
 
 Place the files in the same directory as the Dockerfile.
 
-## Step 2 
-Optional - edit the tnsnames.ora file, so you can conveniently access these databases from the container, without having to enter the entire connection string. 
+## Step 2 (optional)
+Edit the included tnsnames.ora file, so you can conveniently access these databases from the container, without having to enter the entire connection string. 
 
 ## Step 3 
 Build the image
