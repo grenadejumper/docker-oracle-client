@@ -27,11 +27,11 @@ Build the image
 ## Step 4
 Run the image. If you are running a dockerized database, pass its reference in via a docker link:
 
-`docker run --it --name oracleclient --link oracle:oracle oracle/oracleclient`
+`docker run -it --name oracleclient --link oracle:oracle oracle/oracleclient`
 
 Otherwise, you can run it without the link, and connect to other databases via a connection string.
 
-`docker run --it --name oracleclient oracle/oracleclient`
+`docker run -it --name oracleclient oracle/oracleclient`
 
 ## Step 5
 Verify that it works
